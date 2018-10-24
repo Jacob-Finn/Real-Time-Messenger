@@ -12,7 +12,6 @@ class ChannelCell: UITableViewCell {
     
     @IBOutlet weak var channelNameLabel: UILabel!
     
-    
     func setup(channelName: String) {
         channelNameLabel.text = channelName
     }

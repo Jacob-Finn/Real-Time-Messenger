@@ -14,6 +14,7 @@ class ChannelCreatorViewController: UIViewController {
     @IBOutlet weak var titleTextField: UITextField!
     var ref: DatabaseReference!
     
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         navigationController?.setNavigationBarHidden(false, animated: true)
@@ -22,8 +23,6 @@ class ChannelCreatorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         ref = Database.database().reference()
-        print(ref.description())
-        
 
     }
     
@@ -39,8 +38,15 @@ class ChannelCreatorViewController: UIViewController {
             print("Error")
             return
         }
-        self.ref.setValue(channelName)
         
+        let channelSetup: [String : String] = [
+            "name" : channelName,
+            "messages" : "noMessages"
+        ]
+        
+        
+        self.ref.child("channels").child(channelName).childByAutoId().setValue(channelName)
+        self.ref.child("channels").child(channelName).setValue(channelSetup)
         
         
 

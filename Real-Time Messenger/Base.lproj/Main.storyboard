@@ -223,7 +223,7 @@
                                 <rect key="frame" x="0.0" y="65" width="375" height="602"/>
                                 <color key="backgroundColor" red="0.94258779290000005" green="0.68553962290000003" blue="0.39295653419999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="84" id="eGV-oa-r3Y" customClass="ChannelCell" customModule="Real_Time_Messenger" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="84" id="eGV-oa-r3Y" customClass="ChannelCell" customModule="Real_Time_Messenger" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="84"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eGV-oa-r3Y" id="wJe-sk-Gjz">
@@ -231,19 +231,20 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ChannelName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="3hk-UH-aUK">
-                                                    <rect key="frame" x="78" y="11.5" width="285" height="20"/>
+                                                    <rect key="frame" x="145" y="12.5" width="215" height="20"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fire Logo" translatesAutoresizingMaskIntoConstraints="NO" id="skv-PX-JRt">
-                                                    <rect key="frame" x="0.0" y="0.0" width="75" height="83.5"/>
+                                                    <rect key="frame" x="20" y="5" width="90" height="73.5"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="75" id="hkg-2S-sL9"/>
+                                                        <constraint firstAttribute="width" constant="90" id="0gV-2A-YfP"/>
+                                                        <constraint firstAttribute="height" constant="73.5" id="VDe-a1-Rid"/>
                                                     </constraints>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQ6-fk-ITN">
-                                                    <rect key="frame" x="145" y="40" width="160" height="30"/>
+                                                    <rect key="frame" x="195" y="47.5" width="110" height="30"/>
                                                     <color key="backgroundColor" red="1" green="0.081321229719999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <state key="normal" title="Join">
                                                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -251,15 +252,15 @@
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="skv-PX-JRt" firstAttribute="leading" secondItem="wJe-sk-Gjz" secondAttribute="leading" id="FYr-n4-HuI"/>
-                                                <constraint firstItem="3hk-UH-aUK" firstAttribute="leading" secondItem="skv-PX-JRt" secondAttribute="trailing" constant="3" id="Fao-1T-sFU"/>
-                                                <constraint firstAttribute="bottom" secondItem="skv-PX-JRt" secondAttribute="bottom" id="Sd7-v3-fc3"/>
-                                                <constraint firstItem="3hk-UH-aUK" firstAttribute="top" secondItem="wJe-sk-Gjz" secondAttribute="topMargin" constant="0.5" id="Sju-Pw-bgT"/>
-                                                <constraint firstItem="MQ6-fk-ITN" firstAttribute="top" secondItem="3hk-UH-aUK" secondAttribute="bottom" constant="8.5" id="Y2u-F7-oVo"/>
-                                                <constraint firstAttribute="trailing" secondItem="MQ6-fk-ITN" secondAttribute="trailing" constant="70" id="kRe-W0-buy"/>
-                                                <constraint firstItem="skv-PX-JRt" firstAttribute="top" secondItem="wJe-sk-Gjz" secondAttribute="top" id="ofn-za-Cge"/>
-                                                <constraint firstItem="3hk-UH-aUK" firstAttribute="trailing" secondItem="wJe-sk-Gjz" secondAttribute="trailingMargin" constant="3" id="sRg-He-Ooa"/>
-                                                <constraint firstItem="MQ6-fk-ITN" firstAttribute="leading" secondItem="skv-PX-JRt" secondAttribute="trailing" constant="70" id="yBi-Fw-1dZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="skv-PX-JRt" secondAttribute="bottom" constant="5" id="CEG-Mn-DX0"/>
+                                                <constraint firstItem="MQ6-fk-ITN" firstAttribute="top" secondItem="3hk-UH-aUK" secondAttribute="bottom" constant="15" id="DAd-fw-RxM"/>
+                                                <constraint firstItem="skv-PX-JRt" firstAttribute="leading" secondItem="wJe-sk-Gjz" secondAttribute="leading" constant="20" id="Kdz-ep-4qh"/>
+                                                <constraint firstItem="3hk-UH-aUK" firstAttribute="leading" secondItem="skv-PX-JRt" secondAttribute="trailing" constant="35" id="Q1h-0i-3Md"/>
+                                                <constraint firstItem="3hk-UH-aUK" firstAttribute="top" secondItem="wJe-sk-Gjz" secondAttribute="topMargin" constant="1.5" id="V6k-ud-L0B"/>
+                                                <constraint firstAttribute="trailing" secondItem="MQ6-fk-ITN" secondAttribute="trailing" constant="70" id="VdZ-H6-PxW"/>
+                                                <constraint firstItem="3hk-UH-aUK" firstAttribute="trailing" secondItem="wJe-sk-Gjz" secondAttribute="trailingMargin" id="rmv-Hl-yFs"/>
+                                                <constraint firstItem="skv-PX-JRt" firstAttribute="top" secondItem="wJe-sk-Gjz" secondAttribute="top" constant="5" id="scY-bW-ezv"/>
+                                                <constraint firstItem="MQ6-fk-ITN" firstAttribute="leading" secondItem="skv-PX-JRt" secondAttribute="trailing" constant="85" id="uqP-GT-Axt"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
