@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="auX-JE-Nqi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fire Logo" translatesAutoresizingMaskIntoConstraints="NO" id="ZTF-Zj-LLp">
+                                <rect key="frame" x="67" y="40" width="241" height="239"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="239" id="f4B-wc-Cao"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWP-3o-6Fo">
+                                <rect key="frame" x="90" y="369" width="195" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sWP-3o-6Fo" firstAttribute="top" secondItem="ZTF-Zj-LLp" secondAttribute="bottom" constant="90" id="0KE-rV-2DZ"/>
+                            <constraint firstItem="Czg-Su-lYI" firstAttribute="trailing" secondItem="ZTF-Zj-LLp" secondAttribute="trailing" constant="67" id="gFT-om-b8j"/>
+                            <constraint firstItem="Czg-Su-lYI" firstAttribute="trailing" secondItem="sWP-3o-6Fo" secondAttribute="trailing" constant="90" id="pRK-pt-vbZ"/>
+                            <constraint firstItem="sWP-3o-6Fo" firstAttribute="leading" secondItem="Czg-Su-lYI" secondAttribute="leading" constant="90" id="qXI-FR-xdc"/>
+                            <constraint firstItem="ZTF-Zj-LLp" firstAttribute="top" secondItem="Czg-Su-lYI" secondAttribute="top" constant="20" id="rDu-Sz-KGP"/>
+                            <constraint firstItem="ZTF-Zj-LLp" firstAttribute="leading" secondItem="Czg-Su-lYI" secondAttribute="leading" constant="67" id="vSH-qN-lC8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Czg-Su-lYI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Fire Logo" width="90.720001220703125" height="132"/>
+    </resources>
+</document>
